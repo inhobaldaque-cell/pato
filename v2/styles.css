@@ -51,10 +51,11 @@ header{position:absolute;top:0;left:0;width:100%;z-index:100;background:transpar
 .egg-illustration { width: min(35vw, 190px); height: auto; object-fit: contain; cursor: pointer; margin-top: -60px; transition: transform 0.3s ease; }
 @keyframes abanar-ovo { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
 .egg-illustration:hover { animation: abanar-ovo 0.3s ease-in-out infinite; }
-.fundraising p { font-family: "DMSans", sans-serif; font-size: 1rem; max-width: 600px; line-height: 1.4; margin-top: 30px; }
+.fundraising p { font-family: "DMSans", sans-serif; font-size: 1rem; max-width: 600px; line-height: 1.4; margin-top: 10px}
 .egg-link{display:inline-block;position:relative;z-index:10;cursor:pointer}
-
-.ovo-animado{display:block;width:min(75vw,400px);height:auto;object-fit:contain;transform-origin:center bottom;cursor:pointer}
+.fundraising p{transform:translateY(-20px)}
+.fundraising p:first-of-type{transform:translateY(20)}
+.ovo-animado{display:block;width:min(75vw,400px);height:auto;object-fit:contain;transform-origin:center bottom;cursor:pointer; margin-top:-100px;}
 .ovo-animado:hover{animation:ovoAbanar .85s ease-in-out infinite}
 @keyframes ovoAbanar{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
 @media(prefers-reduced-motion:reduce){.ovo-animado:hover{animation:none}}
@@ -89,9 +90,9 @@ body { overflow-x: hidden; }
 .footer-divider { width: min(100%, 900px); height: 1px; background-color: var(--creme-pato); opacity: 0.35; margin: 0 auto 25px; }
 
 
-/* QUEM SOMOS — ABERTURA */
+/* QUEM SOMOS — ABERTURA */ 
 .quem-v2{background:var(--creme-pato);color:var(--verde-pato)}
-.quem-abertura{display:flex;flex-direction:column;background:var(--creme-pato)}
+.quem-abertura{display:flex;flex-direction:column;background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
 .quem-riscas{display:block;width:100%;height:105px;background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
 
 .quem-cabecalho{min-height:65vh;padding:90px 9%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
@@ -118,9 +119,13 @@ body { overflow-x: hidden; }
 
 /* QUEM SOMOS — RISCAS E FOTOGRAFIAS */
 .quem-razao-foto,.quem-publico-foto,.quem-historia-foto{min-height:500px;padding:0;position:relative;overflow:hidden}
-.quem-razao-foto,.quem-publico-foto{background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
-.quem-historia-foto{background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
+.quem-razao-foto,.quem-publico-foto, .quem-historia-foto{background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
 .quem-razao-foto img,.quem-publico-foto img,.quem-historia-foto img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;border-radius:0}
+
+
+/*.quem-razao-foto,.quem-publico-foto,.quem-historia-foto{min-height:500px;padding:50px;position:relative;overflow:hidden;display:flex;align-items:stretch}
+.quem-razao-foto img,.quem-publico-foto img,.quem-historia-foto img{position:relative;inset:auto;display:block;width:100%;height:100%;max-height:none;object-fit:cover;border-radius:0;flex:1;min-height:0}
+*/
 
 /* QUEM SOMOS — TELEMÓVEIS */
 @media(max-width:850px){
