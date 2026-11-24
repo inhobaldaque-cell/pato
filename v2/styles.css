@@ -52,7 +52,7 @@ header{position:absolute;top:0;left:0;width:100%;z-index:100;background:transpar
 @keyframes abanar-ovo { 0%, 100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
 .egg-illustration:hover { animation: abanar-ovo 0.3s ease-in-out infinite; }
 .fundraising p { font-family: "DMSans", sans-serif; font-size: 1rem; max-width: 600px; line-height: 1.4; margin-top: 30px; }
-.egg-link{display:inline-block}
+.egg-link{display:inline-block;position:relative;z-index:10;cursor:pointer}
 
 .ovo-animado{display:block;width:min(75vw,400px);height:auto;object-fit:contain;transform-origin:center bottom;cursor:pointer}
 .ovo-animado:hover{animation:ovoAbanar .85s ease-in-out infinite}
@@ -117,10 +117,10 @@ body { overflow-x: hidden; }
 .quem-razao-texto p,.quem-publico-texto p,.quem-historia-texto p{font-family:"DMSans",sans-serif;font-size:1.1rem;line-height:1.8}
 
 /* QUEM SOMOS — RISCAS E FOTOGRAFIAS */
-.quem-razao-foto,.quem-publico-foto,.quem-historia-foto{min-height:500px;padding:45px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.quem-razao-foto,.quem-publico-foto,.quem-historia-foto{min-height:500px;padding:0;position:relative;overflow:hidden}
 .quem-razao-foto,.quem-publico-foto{background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
 .quem-historia-foto{background:repeating-linear-gradient(90deg,#ffe356 0 32px,#ffd54e 32px 64px)}
-.quem-razao-foto img,.quem-publico-foto img,.quem-historia-foto img{display:block;width:min(100%,390px);height:auto;max-height:330px;object-fit:cover;border-radius:15px}
+.quem-razao-foto img,.quem-publico-foto img,.quem-historia-foto img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;border-radius:0}
 
 /* QUEM SOMOS — TELEMÓVEIS */
 @media(max-width:850px){
